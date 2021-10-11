@@ -1,0 +1,295 @@
+*{
+
+    margin: 0; padding: 0;
+    font-family: "Roboto" , sans-serif
+
+}
+
+::selection{
+    
+    color: white;
+    background-color: rgb(143, 76, 0) ;
+
+}
+
+
+.half-page{
+
+    position: relative;
+    background-image: url(./image/873088.jpg);
+    max-width: 100%;height: 100vh;
+    background-repeat: no-repeat;background-size: cover;
+
+}
+
+.calculator-BBQ{
+
+    display: block;
+    position: absolute;
+    left: 50%; top: 50%; 
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.863);
+    height: auto; width: 400px;
+    padding-top: 25px;padding-bottom: 25px;
+    border-radius: 20px;
+}
+
+.calculator-BBQ h3{
+
+    font-size: 20px;
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 17px 
+
+}
+
+input{
+
+    display: block;
+    margin-right: auto; margin-left: auto; margin-top: 10px;
+    width: 70%;
+    padding: 15px;
+    outline: none;
+    border-style: solid; border-color: rgb(143, 76, 0); border-width: 2px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+
+  -webkit-appearance: none;
+    margin: 0;
+
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:focus{
+
+    background-color: rgba(192, 131, 60, 0.507);
+
+}
+
+.Men{
+
+    background-image: url(./image/Male-Face-O4-icon.png); background-repeat: no-repeat; 
+    background-position-x: calc(100% - 10px); background-position-y: center;
+
+}
+
+.Women{
+
+    background-image: url(./image/Female-Face-FG-1-brunette-icon.png); background-repeat: no-repeat; 
+    background-position-x: calc(100% - 10px); background-position-y: center;
+
+}
+
+.Kids{
+
+    background-image: url(./image/kid-icon\ \(1\).png); background-repeat: no-repeat; 
+    background-position-x: calc(100% - 10px); background-position-y: center;
+
+}
+
+.Duration{
+
+    background-image: url(./image/42605-watch-icon.png); background-repeat: no-repeat; 
+    background-position-x: calc(100% - 10px); background-position-y: center;
+
+}
+
+.calculator-BBQ p{
+
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px
+
+}
+
+#pictures{
+
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.beef{
+
+    margin-right: 45px;
+
+}
+
+.refri{
+
+    margin-right: 45px;
+
+}
+
+.refri:hover, .beef:hover, .cerve:hover{
+
+    background-color: rgba(134, 128, 120, 0.303);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+}
+
+.Button-calc{
+
+    display: block;
+    margin-top: 20px;
+    background-color: rgb(143, 76, 0);
+    font-size: 19px;
+    margin-right: auto; margin-left: auto;
+    width: 75%;
+    padding: 10px;
+    border-style: solid;
+    border-color:rgb(143, 76, 0)
+
+}
+
+.Button-calc:hover{
+
+    background-color: black;
+    color:rgb(143, 76, 0);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    
+}
+
+
+
+.secound{
+
+    display: none;
+    background-color: rgba(255, 255, 255, 0.863);
+    position: absolute;
+    left: 50%; top: 50%; 
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.863);
+    height: auto; width: 400px;
+    padding-top: 25px; padding-bottom: 10px;
+    border-radius: 20px;
+
+}
+
+.arrow{
+
+    position: absolute;
+    left: 88%;
+    top: 17px;
+
+}
+
+.arrow:hover{
+
+    cursor:pointer
+
+}
+
+.title{
+    
+    text-align: left;
+    font-size: 18px;
+    margin-left: 15px
+
+}   
+
+.paragraph {
+
+    margin-top: 40px;
+    color: rgb(173, 97, 9); 
+    font-weight: bold; font-size: 19px;
+    margin-left: 15px
+
+}
+
+.title p{
+
+    margin-top: 40px;
+    position: absolute;
+    font-size: 20px;
+
+}
+
+.beef-s{
+
+    margin-top: 40px;
+    position: relative;
+    left: 90%;
+
+}
+
+.soda-s{
+
+    position: relative;
+    left: 90%;
+    margin-top: 40px;
+}
+
+.beer-s{
+
+    position: relative;
+    left: 90%;
+    margin-top: 40px;
+
+}
+
+.print{
+
+    position: relative;
+    top: 40px;
+    width: 100%;
+    padding: 30px;
+    background-color:rgb(173, 97, 9);
+    border-style: solid; border-color: rgb(173, 97, 9);
+    font-size: 19px;
+    border-radius: 0px;
+
+}
+
+.print:hover{
+
+    background-color: black; color: rgb(173, 97, 9);
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+
+}
+
+@media screen and (max-width: 405px){
+
+    .calculator-BBQ{
+
+        width: 80%;
+
+    }
+
+    .calculator-BBQ p{
+
+        font-size: 19px;
+
+    }
+
+    #beef, #soda, #beer{
+
+        height: 40px;
+
+    }
+
+}
+
+@media screen and (max-width: 277px){
+
+    #beef, #soda, #beer{
+
+        margin-right: 10px;
+
+    }
+}
+    
+
+
+
+
+
+
