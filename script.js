@@ -93,7 +93,7 @@ function calcFood(){
     }
 
     store_beef = `<span>${(store_beef / 1000)}</span> Kg de Carne`;
-    store_soda = `<span>${Math.floor((store_soda / 1000) / 2)}</span> Garrafas de bebidas de 2L`;
+    store_soda = `<span>${Math.floor((store_soda / 1000) / 2)}</span> Garrafas de refrigerantes de 2L`;
     store_beer = `<span>${Math.floor((store_beer / 1000) / 0.350)}</span> Latinhas de Cerveja`;
 
     var Quantity = [store_beef, store_soda, store_beer];
