@@ -72,8 +72,8 @@ function calcFood(){
     const Quantity_Duration = parseInt(get_Inputs[3].value);
 
     const QBeef_Men   = 500;
-    const QBeef_Women = 300;
-    const QBeef_Kid   = 200;
+    const QBeef_Women = 500;
+    const QBeef_Kid   = 250;
 
     const QBeer  = Quantity_Duration >= 6 ? 2000 : 1200;
     const QDrink = Quantity_Duration >= 6 ? 1500 : 1000;
