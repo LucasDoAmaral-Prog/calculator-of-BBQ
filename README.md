@@ -23,8 +23,8 @@
   <li>You will be able to enter the number of people who will be present at the barbecue.</li><br>
   <li>You can choose between the kids, women and men, to calculate the items that will need in barbecue</li><br>
   <li>You can choose between the foods available</li><br>
-  <li>The items that are not defined, the answer will be written as "NÃO DEFINIDO"</li>
-  <li>It is also possible to print the result./li>
+  <li>The items that are not defined, the answer will be written as "NÃO DEFINIDO"</li><br>
+  <li>It is also possible to print the result.</li>
   </ul><br>
 
   <ul><li><h2>Page</h2></li>
