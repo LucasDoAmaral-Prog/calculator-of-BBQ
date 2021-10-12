@@ -11,6 +11,8 @@ let image_Declaration, image_Groups, images_Names;
 
 let TimeOut, Interval, Interval_2, TimeOut_2;
 
+let store_beer, store_beef, store_soda;
+
 const content_Page = document.getElementsByClassName('calculator-BBQ')[0];
 const secound_Page = document.getElementsByClassName('secound')[0];
 
@@ -29,8 +31,6 @@ image_beef .addEventListener("click", addStyle);
 image_soda .addEventListener("click", addStyle);
 image_beer .addEventListener("click", addStyle);
 image_arrow.addEventListener("click", hideResults)
-
-let store_beer, store_beef, store_soda;
 
 function executeCalc(){   
 
