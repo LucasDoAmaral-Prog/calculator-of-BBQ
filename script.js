@@ -152,12 +152,13 @@ function hideResults(){
         secound_Page.style.display = 'none'; 
         content_Page.style.display = 'block';
         content_Page.style.opacity = '1';
+        resetValues();
     
         clearInterval(Interval_2);
-        
-        resetValues();
+
         
     }, 300);
+
 }
 
 function addStyle(e){
@@ -170,6 +171,7 @@ function addStyle(e){
 
     e.target.removeEventListener(e.type, arguments.callee);
     e.target.addEventListener(e.type, remStyle);
+    console.log(Active)
 
 }
 
@@ -179,14 +181,14 @@ function remStyle(e){
     image_Active   = undefined;
 
     Active.splice(e.target.id, 1);
-
+    
     e.target.removeEventListener(e.type, arguments.callee);
     e.target.addEventListener(e.type, addStyle);
+    console.log(Active)
 
 }
 
 function resetValues(){
-
 
     input_Declaration = document.getElementById('inputs');
     get_Inputs        = input_Declaration.children;
@@ -196,10 +198,13 @@ function resetValues(){
     const pictures_Group       = document.getElementById('pictures');
     const pictures_Declaration = pictures_Group.children;
 
-    for ( let i = 0; i < pictures_Declaration.length; i++ ) pictures_Declaration[i]
-    .style = "border: none; transition: all .2s ease; rgba(255, 255, 255, 0.863)";
+    for ( let i = 0; i < pictures_Declaration.length; i++ ){
+        
+        pictures_Declaration[i].removeEventListener('click', remStyle);
+        pictures_Declaration[i].addEventListener('click', addStyle);
+        pictures_Declaration[i].style = "border: none; transition: all .2s ease; rgba(255, 255, 255, 0.863)";
 
-    image_Active = undefined;
-    Active       = [];
+        Active = []
 
+    }
 }
