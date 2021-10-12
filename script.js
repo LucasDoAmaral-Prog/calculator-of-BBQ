@@ -3,7 +3,7 @@ var Active = []
 var image_Active;
 
 var number   = 0.1;
-var number_2 = 0.1
+var number_2 = 0.1;
 
 let input_Declaration, get_Inputs, input_Value, input_Name;
 
