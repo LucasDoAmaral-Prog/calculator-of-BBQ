@@ -71,9 +71,9 @@ function calcFood(){
     const Quantity_Kids     = parseInt(get_Inputs[2].value);
     const Quantity_Duration = parseInt(get_Inputs[3].value);
 
-    const QBeef_Men   = 500;
-    const QBeef_Women = 500;
-    const QBeef_Kid   = 250;
+    const QBeef_Men   = Quantity_Duration >= 6 ? 700 : 500;
+    const QBeef_Women = Quantity_Duration >= 6 ? 700 : 500;
+    const QBeef_Kid   = Quantity_Duration >= 6 ? 350 : 250;
 
     const QBeer  = Quantity_Duration >= 6 ? 2000 : 1200;
     const QDrink = Quantity_Duration >= 6 ? 1500 : 1000;
@@ -84,7 +84,7 @@ function calcFood(){
             store_beef = (Quantity_Men * QBeef_Men) + (Quantity_Women * QBeef_Women) + (Quantity_Kids * QBeef_Kid);
 
         if (i == 'soda')
-            store_soda = (Quantity_Men * QDrink) + (Quantity_Women * QDrink) + ( (Quantity_Kids * QDrink) / 2 );
+            store_soda = (Quantity_Men * QDrink) + (Quantity_Women * QDrink) + ((Quantity_Kids * QDrink) / 2);
 
 
         if (i == 'beer')     
@@ -93,8 +93,8 @@ function calcFood(){
     }
 
     store_beef = `<span>${(store_beef / 1000)}</span> Kg de Carne`;
-    store_soda = `<span>${Math.floor((store_soda / 1000) / 2)}</span> Garrafas de refrigerantes de 2L`;
-    store_beer = `<span>${Math.floor((store_beer / 1000) / 0.350)}</span> Latinhas de Cerveja`;
+    store_soda = `<span>${Math.round((store_soda / 1000) / 2)}</span> Garrafas de refrigerantes de 2L`;
+    store_beer = `<span>${Math.round((store_beer / 1000) / 0.350)}</span> Latinhas de Cerveja`;
 
     var Quantity = [store_beef, store_soda, store_beer];
 
