@@ -41,7 +41,7 @@ function executeCalc(){
         input_Value = get_Inputs[i].value;
         input_Name  = get_Inputs[i].getAttribute('name');
         var verify_contentInput = input_Value === '' || input_Value === ' ' ?
-        alert(`O campo de ${input_Name} tem que ser preenchido!) && false : true`;
+        alert(`O campo de ${input_Name} tem que ser preenchido!`) && false : true;
 
     }
 
