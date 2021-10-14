@@ -59,10 +59,7 @@ function executeCalc(){
             alert("Por favor, selecione algum item que você irá levar para o churrasco.");
 
         }
-    } else 
-        alert(`O campo ${input_Name} tem que ser preenchido`)
-
-
+    } 
 }
 
 function calcFood(){
