@@ -41,12 +41,9 @@ function executeCalc(){
         input_Value = get_Inputs[i].value;
         input_Name  = get_Inputs[i].getAttribute('name');
 
-        var verify_contentInput = input_Value === '' || input_Value === ' ' ?
-        alert(`O campo de ${input_Name} tem que ser preenchido!`) && false : true;
-        
     }
 
-    if ( verify_contentInput ){
+    if( input_Value == '' ){
 
         if( image_Active ){
 
@@ -60,7 +57,9 @@ function executeCalc(){
             alert("Por favor, selecione algum item que você irá levar para o churrasco.");
 
         }
-    }
+    } else alert(`O campo ${input_Name} tem que ser preenchido`)
+
+
 }
 
 function calcFood(){
