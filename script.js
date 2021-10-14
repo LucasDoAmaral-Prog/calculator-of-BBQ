@@ -87,7 +87,7 @@ function calcFood(){
 
 
         if (i == 'beer')     
-            store_beer = (QBeer * Quantity_Men) + (QBeer/400 * Quantity_Women);
+            store_beer = (QBeer * (Quantity_Men + Quantity_Women));
 
     }
 
